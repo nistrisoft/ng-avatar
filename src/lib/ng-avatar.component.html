@@ -1,0 +1,20 @@
+<div class="avatar"
+  [ngStyle]="{
+    'backgroundColor': color,
+    'width': size+'px',
+    'height': size+'px',
+    'fontSize': ((size/2)-((size/2)/6)) + 'px',
+    'backgroundImage': 'url(' + photo + ')'
+  }"
+>
+  <ng-container *ngIf="!photo">{{ initials }}</ng-container>
+  <span
+    class="avatar-status"
+    *ngIf="status"
+    [ngStyle]="{
+      'width': (size/3)+'px',
+      'height': (size/3)+'px',
+      'backgroundColor': status
+    }"
+  ></span>
+</div>

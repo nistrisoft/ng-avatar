@@ -1,0 +1,33 @@
+{
+  "name": "@nis3soft/ng-avatar",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nistrisoft/ng-avatar.git"
+  },
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.0.6",
+    "@angular/core": "^9.0.6",
+    "tslib": "^1.10.0"
+  },
+  "description": "Simple Angular Avatar component for use with Material UI.",
+  "bugs": {
+    "url": "https://github.com/nistrisoft/ng-avatar/issues"
+  },
+  "homepage": "https://github.com/nistrisoft/ng-avatar#readme",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikola Trifunovic",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "ng",
+    "material",
+    "avatar"
+  ]
+}
