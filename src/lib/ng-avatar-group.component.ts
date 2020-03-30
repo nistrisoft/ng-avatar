@@ -4,7 +4,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input} from '@angular/core'
   selector: 'ng-avatar-group',
   template: `
     <ng-content></ng-content>
-    <ng-avatar *ngIf="plus > 0" [text]="plus + '+'" [color]="color"><ng-avatar>
+    <ng-avatar *ngIf="plus > 0" [size]="plusSize" [text]="plus + '+'" [color]="color"><ng-avatar>
   `,
   styles : [
     `
@@ -28,6 +28,7 @@ import { Component, OnInit, ChangeDetectionStrategy, Input} from '@angular/core'
 export class NgAvatarGroupComponent implements OnInit {
 
   @Input() plus = 0;
+  @Input() plusSize = 32;
   @Input() color = '#607D8B';
 
   constructor() { }

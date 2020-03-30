@@ -112,7 +112,7 @@ name="Stefan Trifunovic"
 </div>
 ```
 
-## Options
+## <ng-avatar> Options
 
 |      Attribute      |      Type         |  Default |               Description                     |
 | ------------------- | ----------------- | -------- |-----------------------------------------------|
@@ -123,8 +123,17 @@ name="Stefan Trifunovic"
 | `color`             | *string*          | `random` | Background color of avatar (`hex` or `name`)
 | `status`            | *string*          |   null   | Color of status indicator (`hex` or `name`)
 
+## <ng-avatar-group> Options
+
+|      Attribute      |      Type         |  Default |               Description                     |
+| ------------------- | ----------------- | -------- |-----------------------------------------------|
+| `plus`              | *number*          |    0     | Number to be used as value in `plus` avatar
+| `plusSize`          | *number*          |    32    | Size of avatar for `plus` in pixels
+| `color`             | *string*          | `random` | Background color of avatar (`hex` or `name`)
+
 ## History
 * 0.0.1 : Initial experimental release
+* 0.0.4 : Removed `console.log` call, added `plusSize` option to `<ng-avatar-group>` 
 
 ## License
 

@@ -37,7 +37,6 @@ export class NgAvatarComponent implements OnChanges {
   ];
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
     if (changes.name) {
       this.initials = this.getInitials();
       if (!changes.color) {
